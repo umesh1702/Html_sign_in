@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html style="background-color: rgb(0, 255, 128);">
+    <head>
+        <title>LOGIN PAGE</title>
+        <h3 style="text-align: center;">welcome to xyz.com</h3>
+        <link rel="icon" href="icon-music.svg">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body style="text-align: center;" >
+        <P>This is our official website.</P>
+        <p>To visit our page please login with your credentials </p>
+        <div class="card">
+            <form onsubmit="myfunction()">
+                <label for="USERNAME">USERNAME</label>
+                <input type="text" id="USERNAME" name="USERNAME" placeholder="Type your username"><br>
+                <label for="PASSWORD"> PASSWORD</label>
+                <input type="password" id="PASSWORD" name="PASSWORD" placeholder="Type your password"><br>
+                <button type="submit"  >submit</button>
+            </form><br>
+            <p1>To know more about our website visit <a href="www.xyz.com">xyz.com</a></p1><br>
+            <img src="pic_bulboff.gif"  id="image">
+        </div>
+        <script>
+            function myfunction(){
+                const name=document.getElementById("USERNAME");
+                const password =document.getElementById("PASSWORD");
+                const username = name.value;
+                const passw = password.value;
+                if (username == "" || passw == ""){
+                    window.alert("enter proper crendtials")
+                }else {
+                    console.log("username :",username);
+                    console.log("password :",passw);
+                }
+            }
+        </script>
+         
+         
+    </body>
+</html>
