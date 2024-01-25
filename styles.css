@@ -1,0 +1,17 @@
+.card{
+    background-color: papayawhip;
+    border-radius: 10px;
+    text-align: center;
+    background-size: cover;
+    width: 300px;
+    margin: 50px auto;
+}
+button{
+    border:none;
+    background-color: blue;
+    color: white;
+
+}
+button:hover{
+    color: whitesmoke;
+}
